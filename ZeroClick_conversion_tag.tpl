@@ -25,7 +25,16 @@ ___TEMPLATE_PARAMETERS___
     "type": "TEXT",
     "name": "pixelId",
     "displayName": "Pixel ID. Enter your ZeroClick Advertising Pixel ID",
-    "simpleValueType": true
+    "simpleValueType": true,
+    "valueValidators": [
+      {
+        "type": "REGEX",
+        "args": [
+          "^ZC[a-zA-Z0-9]{13}$"
+        ]
+      }
+    ],
+    "valueHint": "ZCa1b234567890c"
   },
   {
     "type": "TEXT",
@@ -320,6 +329,6 @@ scenarios:
 
 ___NOTES___
 
-Created on 11/12/2025, 1:12:07 PM
+Created on 11/13/2025, 6:06:37 PM
 
 
